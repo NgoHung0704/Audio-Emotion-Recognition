@@ -1,0 +1,8 @@
+librosa
+scikit-learn
+matplotlib
+numpy
+pandas
+streamlit
+tensorflow  # or replace with torch if using PyTorch
+joblib
