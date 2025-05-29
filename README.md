@@ -1,7 +1,7 @@
 # Audio Emotion Recognition Project - Initial Setup
 
 ### 📁 Directory structure (suggested)
-##### audio_emotion_ai/
+#### audio_emotion_ai/
 ##### ├── data/               # Place audio files (.wav) here
 ##### ├── notebooks/          # Jupyter notebooks for EDA and prototyping
 ##### ├── models/             # Trained models and weights
