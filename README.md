@@ -1,15 +1,15 @@
 # Audio Emotion Recognition Project - Initial Setup
 
 ### 📁 Directory structure (suggested)
-#### audio_emotion_ai/
-#### ├── data/               # Place audio files (.wav) here
-#### ├── notebooks/          # Jupyter notebooks for EDA and prototyping
-#### ├── models/             # Trained models and weights
-#### ├── app/                # Streamlit/Gradio app for demo
-#### ├── requirements.txt    # Python dependencies
-#### ├── train_model.py      # Script for training model
-#### ├── predict.py          # Script to make predictions
-#### └── README.md           # Project overview and setup guide
+##### audio_emotion_ai/
+##### ├── data/               # Place audio files (.wav) here
+##### ├── notebooks/          # Jupyter notebooks for EDA and prototyping
+##### ├── models/             # Trained models and weights
+##### ├── app/                # Streamlit/Gradio app for demo
+##### ├── requirements.txt    # Python dependencies
+##### ├── train_model.py      # Script for training model
+##### ├── predict.py          # Script to make predictions
+##### └── README.md           # Project overview and setup guide
 
 # --- README.md ---
 
