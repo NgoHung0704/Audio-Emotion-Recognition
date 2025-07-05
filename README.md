@@ -1,4 +1,4 @@
-# Audio Emotion Recognition Project - Initial Setup
+sou# Audio Emotion Recognition Project - Initial Setup
 
 ### 📁 Directory structure (suggested)
 #### audio_emotion_ai/
