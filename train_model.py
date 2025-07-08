@@ -7,6 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
+from sklearn.decomposition import PCA
 import hashlib
 import pickle
 from tqdm import tqdm
@@ -137,7 +138,7 @@ def load_data_set() -> pd.DataFrame:
     file_paths = []
     labels = []
 
-    for root, _, files in tqdm(os.walk(DATA_DIR), desc="Loading dataset"):
+    for root, _, files in os.walk(DATA_DIR):
         for file in files:
             if file.endswith(".wav"):
                 try:
@@ -162,10 +163,10 @@ def train_model():
     
     # Encode labels
     y = pd.Categorical(df['Emotion']).codes
-    
+
     # Split into train and test sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
-    
+
     # Train model
     model = HistGradientBoostingClassifier(random_state=RANDOM_STATE)
     model.fit(X_train, y_train)
